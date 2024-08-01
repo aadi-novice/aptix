@@ -1,0 +1,35 @@
+/* styles/hero.module.css */
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust text color if needed */
+  z-index: 10; /* Ensure it overlays other content */
+  padding: 20px; /* Optional: Adjust padding */
+  text-align: center;
+  width: 100%;
+  max-width: 800px; /* Optional: Adjust max width */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    padding: 15px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    padding: 10px;
+    max-width: 95%;
+  }
+}
